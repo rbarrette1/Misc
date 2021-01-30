@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+ 
+		<!-- 
+				Rogers Quiz Project
+				Version 1.0
+				welcome.php
+				Authors:   Rachelle Barrette
+							   Thomas Malley
+			
+				Date: 		2017-07-24
+				Last Modified: 2017-07-24
+				Working: YES
+			
+						                                  -->
+						
+				
+			<meta charset="UTF-8">
+			
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<link rel="stylesheet" type="text/css" href="css/main.css">
+			<link rel="stylesheet" type="text/css" href="css/animate.css">
+			<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+			<link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"
+  integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw"
+  crossorigin="anonymous">
+		    <link rel="stylesheet" href="animate.min.css">
+			<title>Scoreboard</title> 
+			
+
+	</head>
+
+	<body>
+	
+		<img id="animation" class="animated infinite flip" src="css/sitepics/rogers_logo_half.png">
+		<!-- split players into teams with animation on scoreboard-->
+		<p id="welcome_text" class="animated zoomIn">Rachelle</p>
+		<!-- show start button to start game 
+		- upon click start game
+		-- hide button, show score board
+		-->
+		<table>
+			<tr>
+			<!-- team name and number -->
+				<td><p id="scoreboard_text">Team 1</p>
+				</td>
+				<td><p id="scoreboard_text">Team 2</p> 
+				</td>
+			</tr>
+			<tr>
+			<!-- team scores -->
+				<td><p id="scoreboard_text">5</p>
+				</td>
+				<td><p id="scoreboard_text">4</p> 
+				</td>
+			</tr>
+			<tr>
+			<!-- time left -->
+				<td>
+			<hr><p id="scoreboard_text">00:37</p>
+				</td>
+				<td>
+			<hr><p id="scoreboard_text">00:00</p> 
+				</td>
+			</tr>
+		</table>
+		<!-- upon click of modify questions -->
+	<footer>	
+	
+			<?php require_once 'templates/footer.php'; ?>
+		
+	</footer>
+	</body>
+</html>

@@ -1,0 +1,75 @@
+body {
+    background-image: url("sitepics/welcome_background.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: #cccccc;
+}
+#welcome_text {
+
+	color: white;
+	text-align: center;
+	font-size:100px;
+	font-family: 'Montserrat', sans-serif;
+}
+#welcome{
+	text-align: center;
+	font-size:100px;
+	font-family: 'Montserrat', sans-serif;
+	size:100px;
+}
+#welcomep{
+	text-align: center;
+	color:black;
+}
+#moderator_random, #moderator_modify {
+	padding-top: 60px;
+	text-align: center;
+	font-size:60px;
+	font-family: 'Montserrat', sans-serif;
+	size:60px;
+	text-align: center;
+	color:black;
+}
+#animation {
+	size: 25%;
+}
+td 
+{
+    height: 50px; 
+    width: 50px;
+}
+#scoreboard_text {
+	color: white;
+	text-align: center;
+	font-size:50px;
+	font-family: 'Montserrat', sans-serif;
+}
+table {
+	width:1000px;
+	margin-left: 15%;
+}
+#player_table {
+	width:1350px;
+	text-align: center;
+	margin-left: 5%;
+	outline: #FFFFFF dotted thick;
+}
+#buttons {
+	width:1500px;
+	text-align: center; 
+}
+#welcomem{
+	text-align: center;
+	font-size:80px;
+	font-family: 'Montserrat', sans-serif;
+	size:100px;
+}
+#welcomet{
+	text-align: center;
+	font-size:80px;
+	font-family: 'Montserrat', sans-serif;
+	size:100px;
+}
+#buttons {
+	padding-left: 5%;
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+ 
+		<!-- 
+				Rogers Quiz Project
+				Version 1.0
+				welcome.php
+				Authors:   Rachelle Barrette
+							   Thomas Malley
+			
+				Date: 		2017-07-24
+				Last Modified: 2017-07-24
+				Working: YES
+			
+						                                  -->
+						
+				
+			<meta charset="UTF-8">
+			
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<link rel="stylesheet" type="text/css" href="css/main.css">
+			<link rel="stylesheet" type="text/css" href="css/animate.css">
+			<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+			<link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"
+  integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw"
+  crossorigin="anonymous">
+		    <link rel="stylesheet" href="animate.min.css">
+			<title>Moderator</title> 
+			
+
+	</head>
+
+	<body>
+		
+		<?php require_once 'templates/header.php'; ?>
+
+		<p id="moderator_random"><input id="welcomet" type="submit" name="submit" value="Randomize Teams" onclick="changePic()"></p>
+		<p id="moderator_modify"><input id="welcomem" type="submit" name="submit" value="Modify Game Questions"></p>
+		<!-- upon click of randomize teams 
+		- if player_id is pair, team 1. if player_id is unpair, team 2.
+		- randomize a number between 1 and player amount, to see who is the first captain
+		- erase randomize team button and shrink modify questions button
+		-
+		-- after moderator starts game, show game options (pause, play stop, etc..)
+		-->
+		<br><br>
+		<table id="buttons">
+			<tr>
+			<td></td>
+			<td>
+		<input id="welcomem" type="submit" name="submit" value="Modify Teams"><p></p> <!-- hide modify and show more buttons-->
+			</td>
+			<td></td>
+			</tr>
+			<tr>
+			<td>
+		<input id="welcomem" type="submit" name="submit" value="Start">
+			</td>
+			<td>
+			<input id="welcomem" type="submit" name="submit" value="Stop">
+			</td>
+			<td>
+			<input id="welcomem" type="submit" name="submit" value="Pause"><p></p>
+			</td>
+			</tr>
+			<tr>
+			<td>
+		<input id="welcomem" type="submit" name="submit" value="Team 1++">
+			</td>
+			<td></td>
+			<td>
+			<input id="welcomem" type="submit" name="submit" value="Team 2++">
+			</td>
+			</tr>
+		</table>
+		<script>
+			var randomize = document.getElementById("welcomet");
+			var welcome = document.getElementById("buttons");
+			welcome.style.display="none";
+
+			function changePic(){
+				welcome.style.display = "block";
+				randomize.style.display="none";
+			}
+		</script>
+	<footer>	
+	
+			<?php require_once 'templates/footer.php'; ?>
+		
+	</footer>
+	</body>
+</html>

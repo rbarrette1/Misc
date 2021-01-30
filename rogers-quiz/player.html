@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+ 
+		<!-- 
+				Rogers Quiz Project
+				Version 1.0
+				welcome.php
+				Authors:   Rachelle Barrette
+							   Thomas Malley
+			
+				Date: 		2017-07-24
+				Last Modified: 2017-07-24
+				Working: YES
+			
+						                                  -->
+						
+				
+			<meta charset="UTF-8">
+			
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<link rel="stylesheet" type="text/css" href="css/main.css">
+			<link rel="stylesheet" type="text/css" href="css/animate.css">
+			<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+			<link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"
+  integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw"
+  crossorigin="anonymous">
+		    <link rel="stylesheet" href="animate.min.css">
+			<title>Player</title> 
+			
+
+	</head>
+
+	<body>
+	<!-- before game starts, do not show card 
+	- if player is chosen to be captain (3rd person from each team) and moderator chooses to play next turn
+	- redirect them to game card page and somehow auto refresh?
+	- once turn is done, change back to not your turn message
+	-->
+	<p id="welcome_text" class="animated bounceIn">Team # <br>It's your turn, come on up!</p>
+	<!--<p id="welcome_text" class="animated bounceIn">Team # <br>Be patient, it's not your turn yet!</p>-->
+
+	<input id="welcomem" type="submit" name="submit" value="Show Card" onclick="changePic()">
+	<table id="player_table">
+			<tr>
+			<!-- team name and number -->
+				<td>
+				</td>
+				<td><p id="scoreboard_text">Choice Close</p> 
+				</td>
+				<td>
+				</td>
+			</tr>
+			<tr>
+			<!-- team scores -->
+				<!-- guessed correctly -->
+				<td><!--<input id="welcome" type="submit" name="submit" value="Correct">-->
+				</td>
+				<!-- can't guess, skip but put the question back in the question pool -->
+				<td><input id="welcome" type="submit" name="submit" value="Skip">
+				</td>
+				<!-- said one of the words on the card or time ran out -->
+				<td><!--<input id="welcome" type="submit" name="submit" value="Wrong">-->
+				</td>
+			</tr>
+		</table>
+	<script>
+			var randomize = document.getElementById("welcome_text");
+			var welcome = document.getElementById("player_table");
+			var button = document.getElementById("welcomem");
+			welcome.style.display="none";
+
+			function changePic(){
+				welcome.style.display = "block";
+				randomize.style.display="none";
+				button.style.display="none";
+			}
+		</script>		
+	
+	<footer>	
+	
+			<?php require_once 'templates/footer.php'; ?>
+		
+	</footer>
+	</body>
+</html>
